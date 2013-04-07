@@ -33,7 +33,7 @@ self at:'asc' put: (Set new).
 
 myPosition: aDocGraph
 
-aDocGraph lines keysAndValuesDo:[:key :value|  (value includes: self at:'sha1') ifTrue:[^key.]].
+aDocGraph lines keysAndValuesDo:[:key :value|  (value includesKey: (self at:'sha1')) ifTrue:[^key.]].
 ! !
 
 !Doc class methodsFor: 'not yet classified'!
